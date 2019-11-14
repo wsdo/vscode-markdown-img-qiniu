@@ -2,10 +2,10 @@
   "name": "markdown-img-qiniu",
   "displayName": "markdown paste image to qiniu",
   "description": "markdown 截图上传七牛云插件",
-  "version": "1.0.0",
-  "publisher": "shudong",
+  "version": "1.0.1",
+  "publisher": "starkwang",
   "author": {
-    "name": "shudong",
+    "name": "starkwang",
     "email": "wsd312@163.com"
   },
   "repository": {
