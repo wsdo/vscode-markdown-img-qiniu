@@ -3,7 +3,7 @@
  * @Contact me: https://shudong.wang/about
  * @Date: 2019-11-14 14:06:47
  * @LastEditors: starkwang
- * @LastEditTime: 2019-11-14 16:47:11
+ * @LastEditTime: 2019-11-14 17:05:42
  * @Description: file content
  -->
 # vscode-paste-image-to-qiniu

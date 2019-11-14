@@ -1,8 +1,8 @@
 {
   "name": "markdown-img-qiniu",
-  "displayName": "markdown paste image to qiniu",
+  "displayName": "Markdown Paste Image To Qiniu",
   "description": "markdown 截图上传七牛云插件",
-  "version": "1.0.1",
+  "version": "1.0.6",
   "publisher": "starkwang",
   "author": {
     "name": "starkwang",
