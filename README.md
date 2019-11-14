@@ -3,7 +3,7 @@
  * @Contact me: https://shudong.wang/about
  * @Date: 2019-11-14 14:06:47
  * @LastEditors: starkwang
- * @LastEditTime: 2019-11-14 15:56:09
+ * @LastEditTime: 2019-11-14 16:47:11
  * @Description: file content
  -->
 # vscode-paste-image-to-qiniu
@@ -15,9 +15,9 @@
 ## 安装
 输入命令：
 ```bash
-ext install paste-image-to-qiniu
+ext install vscode-paste-image-to-qiniu
 ```
-或者在插件应用商店搜索paste-image-to-qiniu安装
+或者在插件应用商店搜索vscode-paste-image-to-qiniu安装
 
 ## 参数设置
 ```js
@@ -29,19 +29,16 @@ ext install paste-image-to-qiniu
     "qiniu.secret_key": "*****************************************",
 
     // 七牛图片上传空间
-    "qiniu.bucket": "blog",
+    "qiniu.bucket": "static",
 
     // 七牛图片上传路径，参数化命名，暂时支持 ${fileName}、${mdFileName}、${date}、${dateTime}
     // 示例：
     //   ${fileName}-${date} -> picName-20160725.jpg
     //   ${mdFileName}-${dateTime} -> markdownName-20170412222810.jpg
-    "qiniu.remotePath": "${fileName}",
+    "qiniu.remotePath": "shudong/${fileName}",
 
     // 七牛图床域名
-    "qiniu.domain": "http://xxxxx.xxxx.com",
-
-    // 本地储存位置
-    "qiniu.localPath":"./img"
+    "qiniu.domain": "http://s.shudong.wang"
 }
 ```
 
