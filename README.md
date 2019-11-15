@@ -3,14 +3,12 @@
  * @Contact me: https://shudong.wang/about
  * @Date: 2019-11-14 14:06:47
  * @LastEditors: starkwang
- * @LastEditTime: 2019-11-14 17:05:42
+ * @LastEditTime: 2019-11-15 11:08:47
  * @Description: file content
  -->
 # vscode-paste-image-to-qiniu
 
 一个可以支持截图粘贴上传图片到七牛、让你写用vscode写markdown有更好的体验。
-
-![screenshot](./screenshot/screenshot.gif)
 
 ## 安装
 输入命令：
@@ -18,6 +16,10 @@
 ext install vscode-paste-image-to-qiniu
 ```
 或者在插件应用商店搜索vscode-paste-image-to-qiniu安装
+
+> mac 快捷键：option + command + v 
+
+> win 快捷键：ctrl + alt + v
 
 ## 参数设置
 ```js
