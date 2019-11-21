@@ -3,47 +3,38 @@
  * @Contact me: https://shudong.wang/about
  * @Date: 2019-11-14 14:06:47
  * @LastEditors: starkwang
- * @LastEditTime: 2019-11-15 11:08:47
+ * @LastEditTime: 2019-11-21 18:53:18
  * @Description: file content
  -->
-# vscode-paste-image-to-qiniu
+# introduce
+One can simply use the shortcut key to upload the picture of the paste board to the seven-cow picture bed plug-in, allowing you to write markdown with vscode to have a better experience.
 
-一个可以支持截图粘贴上传图片到七牛、让你写用vscode写markdown有更好的体验。
+一个可以简单使用快捷键就把粘贴板的图片上传到七牛图床插件、让你写用vscode写markdown有更好的体验。
 
-## 安装
-输入命令：
-```bash
-ext install vscode-paste-image-to-qiniu
-```
-或者在插件应用商店搜索vscode-paste-image-to-qiniu安装
 
-> mac 快捷键：option + command + v 
+## install
+> Search in the plugin store : markdown
 
-> win 快捷键：ctrl + alt + v
+![20191121184937](http://s.shudong.wang/shudong/20191121184937.png)
+
+Go to www.qiniu.com and apply for ak and sk
+
+
+> mac shortcut key：option + command + v 
+
+> win shortcut key：ctrl + alt + v
 
 ## 参数设置
 ```js
 {
-    // 有效的七牛 AccessKey 签名授权
-    "qiniu.access_key": "*****************************************",
-
-    // 有效的七牛 SecretKey 签名授权
-    "qiniu.secret_key": "*****************************************",
-
-    // 七牛图片上传空间
+    "qiniu.access_key": "*******************",
+    "qiniu.secret_key": "*******************",
     "qiniu.bucket": "static",
-
-    // 七牛图片上传路径，参数化命名，暂时支持 ${fileName}、${mdFileName}、${date}、${dateTime}
-    // 示例：
-    //   ${fileName}-${date} -> picName-20160725.jpg
-    //   ${mdFileName}-${dateTime} -> markdownName-20170412222810.jpg
     "qiniu.remotePath": "shudong/${fileName}",
-
-    // 七牛图床域名
     "qiniu.domain": "http://s.shudong.wang"
 }
 ```
 
-一直使用vscode来开发、写笔记文章、但是用了几款vscode的图床插件都不是很符合我的需求。今天本来想看看书写点笔记、但是发现截图了去处理图片太过于麻烦、于是有了这个插件、仅仅是想体验一下vscode插件的开发流程、也可以方便自己的写体验。
+I have been using vscode to develop and write notes and articles, but I have used several vscode diagram bed plug-ins that do not meet my needs. Today, I wanted to have a look at the writing notes, but I found the screenshots were too troublesome to process the pictures. Therefore, I have this plug-in. I just want to experience the development process of vscode plug-in and also facilitate my writing experience.
 
-如果用的开心给个star也不错！
+If the use of a happy star is not bad!
