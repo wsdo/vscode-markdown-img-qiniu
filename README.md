@@ -3,7 +3,7 @@
  * @Contact me: https://shudong.wang/about
  * @Date: 2019-11-14 14:06:47
  * @LastEditors: starkwang
- * @LastEditTime: 2019-11-21 18:53:18
+ * @LastEditTime: 2019-11-21 18:54:51
  * @Description: file content
  -->
 # introduce
@@ -15,7 +15,7 @@ One can simply use the shortcut key to upload the picture of the paste board to 
 ## install
 > Search in the plugin store : markdown
 
-![20191121184937](http://s.shudong.wang/shudong/20191121184937.png)
+![20191121184937](https://s.shudong.wang/shudong/20191121184937.png)
 
 Go to www.qiniu.com and apply for ak and sk
 
