@@ -4,6 +4,7 @@
   "description": "Markdown Paste Image To Qiniu OSS store",
   "version": "1.0.7",
   "publisher": "starkwang",
+  "icon": "./icon.png",
   "author": {
     "name": "starkwang",
     "email": "wsd312@163.com"
