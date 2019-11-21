@@ -11,6 +11,16 @@ One can simply use the shortcut key to upload the picture of the paste board to 
 
 一个可以简单使用快捷键就把粘贴板的图片上传到七牛图床插件、提高写作效率。
 
+## qiniu
+
+Object storage
+
+Widely used in the sea volume data management scenarios
+
+• standard storage free 10 GB
+• unlimited monthly free upload traffic
+• 100,000 PUT/ month and 1 million GET/ month
+
 ## install
 > Search in the plugin store : markdown
 
