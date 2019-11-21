@@ -2,7 +2,7 @@
   "name": "markdown",
   "displayName": "Markdown",
   "description": "Markdown Paste Image To Qiniu OSS store",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "publisher": "starkwang",
   "icon": "images/icon.png",
   "author": {

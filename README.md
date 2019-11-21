@@ -9,8 +9,7 @@
 # introduce
 One can simply use the shortcut key to upload the picture of the paste board to the seven-cow picture bed plug-in, allowing you to write markdown with vscode to have a better experience.
 
-一个可以简单使用快捷键就把粘贴板的图片上传到七牛图床插件、让你写用vscode写markdown有更好的体验。
-
+一个可以简单使用快捷键就把粘贴板的图片上传到七牛图床插件、提高写作效率。
 
 ## install
 > Search in the plugin store : markdown
@@ -24,7 +23,8 @@ Go to www.qiniu.com and apply for ak and sk
 
 > win shortcut key：ctrl + alt + v
 
-## 参数设置
+## config
+
 ```js
 {
     "qiniu.access_key": "*******************",
