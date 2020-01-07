@@ -2,12 +2,18 @@
  * @Author: starkwang
  * @Contact me: https://shudong.wang/about
  * @Date: 2019-11-14 14:06:47
- * @LastEditors: starkwang
- * @LastEditTime: 2019-11-21 18:54:51
+ * @LastEditors  : starkwang
+ * @LastEditTime : 2019-12-24 10:35:18
  * @Description: file content
  -->
 # introduce
 One can simply use the shortcut key to upload the picture of the paste board to the seven-cow picture bed plug-in, allowing you to write markdown with vscode to have a better experience.
+
+Une simple utilisation des touches de raccourcissage permet de télécharger une image de la plaque collante sur le plug-in de la table de chiu pour améliorer l’efficacité de l’écriture.
+
+간단히 단축키를 사용하여 접착판의 사진을 칠우도 침대의 플러그인에 올려 글을 쓰는 능력을 향상시키는 것.
+
+1つは簡単に使うことができて、貼り板の絵を七牛図床プラグインにアップして、文章の効率を高めます。
 
 一个可以简单使用快捷键就把粘贴板的图片上传到七牛图床插件、提高写作效率。
 
@@ -23,8 +29,7 @@ Widely used in the sea volume data management scenarios
 
 ## install
 > Search in the plugin store : markdown
-
-![20191121184937](https://s.shudong.wang/shudong/20191121184937.png)
+![CoUBGV4T9iuARVgNAAA20pJb9Lg736](https://p1-q.mafengwo.net/s15/M00/B7/50/CoUBGV4T9iuARVgNAAA20pJb9Lg736.png)
 
 Go to www.qiniu.com and apply for ak and sk
 

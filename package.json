@@ -2,7 +2,7 @@
   "name": "markdown",
   "displayName": "Markdown",
   "description": "Markdown Paste Image To Qiniu OSS store",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "publisher": "starkwang",
   "icon": "images/icon.png",
   "author": {
@@ -49,32 +49,32 @@
         "qiniu.access_key": {
           "type": "string",
           "default": "",
-          "description": "一个有效的七牛 AccessKey 签名授权。"
+          "description": "AccessKey"
         },
         "qiniu.secret_key": {
           "type": "string",
           "default": "",
-          "description": "一个有效的七牛 SecretKey 签名授权。"
+          "description": "SecretKey"
         },
         "qiniu.bucket": {
           "type": "string",
           "default": "",
-          "description": "七牛图片上传空间。"
+          "description": "bucket"
         },
         "qiniu.remotePath": {
           "type": "string",
           "default": "${fileName}",
-          "description": "七牛图片上传路径，参数化命名。"
+          "description": "remotePath"
         },
         "qiniu.domain": {
           "type": "string",
           "default": "",
-          "description": "七牛图床域名。"
+          "description": "domain"
         },
         "qiniu.isSaveLocal": {
           "type": "boolean",
           "default": false,
-          "description": "图片是否保存本地"
+          "description": "is Save Local"
         },
         "qiniu.localPath": {
           "type": "string",
