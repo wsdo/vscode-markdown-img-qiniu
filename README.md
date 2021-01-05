@@ -53,3 +53,7 @@ Go to www.qiniu.com and apply for ak and sk
 I have been using vscode to develop and write notes and articles, but I have used several vscode diagram bed plug-ins that do not meet my needs. Today, I wanted to have a look at the writing notes, but I found the screenshots were too troublesome to process the pictures. Therefore, I have this plug-in. I just want to experience the development process of vscode plug-in and also facilitate my writing experience.
 
 If the use of a happy star is not bad!
+
+If it helps you, please point to a star：
+link
+[vscode-markdown-img-qiniu](https://github.com/wsdo/vscode-markdown-img-qiniu)
