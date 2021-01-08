@@ -55,7 +55,7 @@ I have been using vscode to develop and write notes and articles, but I have use
 If the use of a happy star is not bad!
 
 关于我
-about me: [http://www.shudong.wang/about](http://www.shudong.wang/about)
+about me: [http://www.shudong.wang/about](https://www.shudong.wang/about)
 
 If it helps you, please point to a star：
 link
