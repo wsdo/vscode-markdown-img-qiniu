@@ -6,7 +6,6 @@ const {
   spawn
 } = require('child_process');
 const qnUpload = require('./lib/upload');
-
 exports.activate = (context) => {
   const disposable = vscode.commands.registerCommand('extension.qiniu', () => {
     start();
@@ -53,15 +52,16 @@ function start() {
     saveClipboardImageToFileAndGetPath(imagePath, (imagePath) => {
       if (!imagePath) return;
       if (imagePath === 'no image') {
-        vscode.window.showInformationMessage('There is not a image in clipboard.');
+        vscode.window.setStatusBarMessage("There is not a image in clipboard.",3000);
         return;
       }
       qnUpload(config, imagePath, mdFilePath).then(({
         name,
         url
       }) => {
-        vscode.window.setStatusBarMessage("上传成功",3000);
+        vscode.window.setStatusBarMessage("Upload success",3000);
         const img = `![${name}](${url})`;
+        console.log('img',img);
         editor.edit(textEditorEdit => {
           textEditorEdit.insert(editor.selection.active, img)
         });
@@ -73,6 +73,8 @@ function start() {
           }
         });
       }).catch((err) => {
+        console.log(2222);
+        console.log('err',err);
         vscode.window.showErrorMessage('Upload error.');
       });
     });
@@ -86,7 +88,7 @@ function getImagePath(filePath, selectText, localPath) {
   // 图片名称
   let imageFileName = '';
   if (!selectText) {
-    imageFileName = moment().format("YMMDDHHmmss") + '.png';
+    imageFileName = moment().format("HHmmssMMDDY") + '.png';
   } else {
     imageFileName = selectText + '.png';
   }
@@ -128,6 +130,7 @@ function createImageDirWithImagePath(imagePath) {
 function saveClipboardImageToFileAndGetPath(imagePath, cb) {
   if (!imagePath) return;
   let platform = process.platform;
+
   if (platform === 'win32') {
     // Windows
     const scriptPath = path.join(__dirname, './lib/pc.ps1');
@@ -170,7 +173,7 @@ function saveClipboardImageToFileAndGetPath(imagePath, cb) {
     });
 
     ascript.stdout.on('data', function(data) {
-      let result = data.toString().trim();
+      let result = data.toString();
       if (result == "no xclip") {
         vscode.window.showInformationMessage('You need to install xclip command first.');
         return;
