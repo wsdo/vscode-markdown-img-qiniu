@@ -61,7 +61,6 @@ function start() {
       }) => {
         vscode.window.setStatusBarMessage("Upload success",3000);
         const img = `![${name}](${url})`;
-        console.log('img',img);
         editor.edit(textEditorEdit => {
           textEditorEdit.insert(editor.selection.active, img)
         });
@@ -73,7 +72,6 @@ function start() {
           }
         });
       }).catch((err) => {
-        console.log(2222);
         console.log('err',err);
         vscode.window.showErrorMessage('Upload error.');
       });
