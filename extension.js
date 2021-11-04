@@ -14,7 +14,7 @@ exports.activate = (context) => {
 }
 
 // this method is called when your extension is deactivated
-exports.deactivate = () => {}
+exports.deactivate = () => { }
 
 function start() {
   // 获取当前编辑文件
@@ -52,19 +52,19 @@ function start() {
     saveClipboardImageToFileAndGetPath(imagePath, (imagePath) => {
       if (!imagePath) return;
       if (imagePath === 'no image') {
-        vscode.window.setStatusBarMessage("There is not a image in clipboard.",3000);
+        vscode.window.setStatusBarMessage("There is not a image in clipboard.", 3000);
         return;
       }
       qnUpload(config, imagePath, mdFilePath).then(({
         name,
         url
       }) => {
-        vscode.window.setStatusBarMessage("Upload success",3000);
+        vscode.window.setStatusBarMessage("Upload success", 3000);
         const img = `![${name}](${url})`;
         editor.edit(textEditorEdit => {
           textEditorEdit.insert(editor.selection.active, img)
         });
-        fs.unlink(imagePath,(err) => {
+        fs.unlink(imagePath, (err) => {
           if (err) {
             vscode.window.showInformationMessage(err);
           } else {
@@ -72,7 +72,7 @@ function start() {
           }
         });
       }).catch((err) => {
-        console.log('err',err);
+        console.log('err', err);
         vscode.window.showErrorMessage('Upload error.');
       });
     });
@@ -86,7 +86,7 @@ function getImagePath(filePath, selectText, localPath) {
   // 图片名称
   let imageFileName = '';
   if (!selectText) {
-    imageFileName = moment().format("HHmmssMMDDY") + '.png';
+    imageFileName = 's' + moment().format("HHmmssMMDDY") + '.png';
   } else {
     imageFileName = selectText + '.png';
   }
@@ -142,10 +142,10 @@ function saveClipboardImageToFileAndGetPath(imagePath, cb) {
       '-file', scriptPath,
       imagePath
     ]);
-    powershell.on('exit', function(code, signal) {
+    powershell.on('exit', function (code, signal) {
 
     });
-    powershell.stdout.on('data', function(data) {
+    powershell.stdout.on('data', function (data) {
       cb(data.toString().trim());
     });
   } else if (platform === 'darwin') {
@@ -153,11 +153,11 @@ function saveClipboardImageToFileAndGetPath(imagePath, cb) {
     let scriptPath = path.join(__dirname, './lib/mac.applescript');
 
     let ascript = spawn('osascript', [scriptPath, imagePath]);
-    ascript.on('exit', function(code, signal) {
+    ascript.on('exit', function (code, signal) {
 
     });
 
-    ascript.stdout.on('data', function(data) {
+    ascript.stdout.on('data', function (data) {
       cb(data.toString().trim());
     });
   } else {
@@ -166,11 +166,11 @@ function saveClipboardImageToFileAndGetPath(imagePath, cb) {
     let scriptPath = path.join(__dirname, './lib/linux.sh');
 
     let ascript = spawn('sh', [scriptPath, imagePath]);
-    ascript.on('exit', function(code, signal) {
+    ascript.on('exit', function (code, signal) {
 
     });
 
-    ascript.stdout.on('data', function(data) {
+    ascript.stdout.on('data', function (data) {
       let result = data.toString();
       if (result == "no xclip") {
         vscode.window.showInformationMessage('You need to install xclip command first.');
