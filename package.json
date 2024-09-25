@@ -11,11 +11,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/wsdo/vscode-markdown-img-qiniu.git"
+    "url": "https://github.com/okmdx/okmd-vscode"
   },
-  "homepage": "https://github.com/wsdo/vscode-markdown-img-qiniu.git/blob/master/README.md",
+  "homepage": "https://github.com/okmdx/okmd-vscode/blob/master/README.md",
   "bugs": {
-    "url": "https://github.com/wsdo/vscode-markdown-img-qiniu.git/issues"
+    "url": "https://github.com/okmdx/okmd-vscode/issues"
   },
   "engines": {
     "vscode": "^1.11.0"
