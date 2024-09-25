@@ -2,9 +2,9 @@
   "name": "markdown",
   "displayName": "Markdown",
   "description": "Markdown Paste Image To okmd.dev OSS store",
-  "version": "1.2.5",
+  "version": "2.0.4",
   "publisher": "starkwang",
-  "icon": "images/icon.png",
+  "icon": "images/logo.webp",
   "author": {
     "name": "starkwang",
     "email": "shudongai@gmail.com"
