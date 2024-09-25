@@ -1,13 +1,13 @@
 {
   "name": "markdown",
   "displayName": "Markdown",
-  "description": "Markdown Paste Image To Qiniu OSS store",
+  "description": "Markdown Paste Image To okmd.dev OSS store",
   "version": "1.2.5",
   "publisher": "starkwang",
   "icon": "images/icon.png",
   "author": {
     "name": "starkwang",
-    "email": "wsd312@163.com"
+    "email": "shudongai@gmail.com"
   },
   "repository": {
     "type": "git",
@@ -24,19 +24,19 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand:extension.qiniu"
+    "onCommand:extension.okmd"
   ],
   "main": "./extension",
   "contributes": {
     "commands": [
       {
-        "command": "extension.qiniu",
-        "title": "Paste Image To Qiniu"
+        "command": "extension.okmd",
+        "title": "Paste Image To okmd.dev"
       }
     ],
     "keybindings": [
       {
-        "command": "extension.qiniu",
+        "command": "extension.okmd",
         "key": "ctrl+alt+v",
         "mac": "cmd+alt+v",
         "when": "editorTextFocus"
@@ -79,7 +79,7 @@
         "qiniu.localPath": {
           "type": "string",
           "default": "./img",
-          "description": "图片本地保存位置"
+          "description": "Image local save location"
         }
       }
     }
@@ -98,6 +98,6 @@
   },
   "dependencies": {
     "moment": "^2.18.1",
-    "qiniu": "7.3.3"
+    "request": "^2.88.2"
   }
 }

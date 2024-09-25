@@ -7,7 +7,7 @@ const {
 } = require('child_process');
 const qnUpload = require('./lib/upload');
 exports.activate = (context) => {
-  const disposable = vscode.commands.registerCommand('extension.qiniu', () => {
+  const disposable = vscode.commands.registerCommand('extension.okmd', () => {
     start();
   });
   context.subscriptions.push(disposable);
